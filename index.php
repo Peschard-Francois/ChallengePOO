@@ -2,11 +2,6 @@
 require_once 'bicycle.php';
 require_once 'Car.php';
 require_once 'Truck.php';
-require_once 'HighWay.php';
-require_once 'PedestrianWay.php';
-require_once 'ResidentialWay.php';
-require_once 'MotorWay.php';
-require_once 'Skateboard.php';
 
 /*echo "Challenge1";
 $bike = new Bicycle("blue");
@@ -67,36 +62,3 @@ echo "<br>";
 echo $truck->Capacity(150);
 echo "<br>";
 echo $truck->Capacity(300);
-echo "<br>";
-echo "<br>";
-echo "<br>";
-echo "Challenge2";
-echo "<br>";
-
-$skate = new Skateboard('blue',4);
-$test = new PedestrianWay();
-$test->addVehicles($skate);
-print_r($test);
-
-echo "<br>";
-echo "<br>";
-
-$car = new Car("blue",4,'Electric');
-$test2 = new MotorWay();
-$test2->addVehicles($car);
-print_r($test2);
-
-echo "<br>";
-echo "<br>";
-
-$car = new Truck('Black',3,'Diesel',10000);
-$test2 = new ResidentialWay();
-$test2->addVehicles($car);
-print_r($test2);
-echo "<br>";
-echo "<br>";
-//Ne fonctionne pas
-$car = new Truck('Black',3,'Diesel',10000);
-$test3 = new PedestrianWay();
-$test3->addVehicles($car);
-print_r($test3);
