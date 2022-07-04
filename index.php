@@ -94,3 +94,20 @@ $car2= new Car('yellow',6,'Essence');
 $test4 = new PedestrianWay();
 $test4->addVehicles($car2);
 print_r($test4);
+echo "<br>";
+echo "<br>";
+echo "Challenge4";
+echo "<br>";
+$ferrari = new Car('red',2,'Essence');
+$ferrari->setHasParkBrake(true);
+echo "<br>";
+try {
+    $ferrari->start();
+}catch (Exception $e){
+    echo "Exception received  : ". $e->getMessage() ;
+} finally {
+    echo "Ma voiture roule comme un donut";
+    echo "<br>";
+}
+echo "<br>";
+print_r($ferrari);
