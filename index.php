@@ -7,6 +7,8 @@ require_once 'MotorWay.php';
 require_once 'ResidentialWay.php';
 require_once 'PedestrianWay.php';
 require_once 'Skateboard.php';
+require_once 'Speedometer.php';
+require_once 'LightableInterface.php';
 
 /*echo "Challenge1";
 $bike = new Bicycle("blue");
@@ -38,7 +40,7 @@ echo "<br>";
 print_r($car2) ;
 */
 
-$bicycle = new Bicycle('blue', 1);
+/*$bicycle = new Bicycle('blue', 1);
 echo $bicycle->forward();
 var_dump($bicycle);
 echo "<br>";
@@ -111,3 +113,8 @@ try {
 }
 echo "<br>";
 print_r($ferrari);
+*/
+
+echo Speedometer::convertKmToMiles(10);
+echo "<br>";
+echo Speedometer::convertMilesToKm(10);
