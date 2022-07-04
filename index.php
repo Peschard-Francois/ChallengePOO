@@ -9,6 +9,7 @@ require_once 'PedestrianWay.php';
 require_once 'Skateboard.php';
 require_once 'Speedometer.php';
 require_once 'LightableInterface.php';
+require_once 'Personne.php';
 
 /*echo "Challenge1";
 $bike = new Bicycle("blue");
@@ -114,7 +115,17 @@ try {
 echo "<br>";
 print_r($ferrari);
 */
-
+/*
 echo Speedometer::convertKmToMiles(10);
 echo "<br>";
 echo Speedometer::convertMilesToKm(10);
+*/
+
+$franco = new Personne("PESCHARD","Francois","183 rue de Paris","06-01-1986");
+print_r($franco);
+echo "<br>";
+echo "<br>";
+echo $franco->displayIdentity();
+echo "<br>";
+echo "<br>";
+echo $franco->calculAge();
