@@ -2,7 +2,7 @@
 
 require_once 'Vehicle.php';
 
-class Car extends Vehicle
+class Car extends Vehicle implements LightableInterface
 {
     private string $energy;
     private int $energyLevel;
@@ -64,5 +64,15 @@ class Car extends Vehicle
     public function setHasParkBrake(bool $hasParkBrake): void
     {
         $this->hasParkBrake = $hasParkBrake;
+    }
+
+    public function switchOn(): bool
+    {
+        return true;
+    }
+
+    public function switchOff(): bool
+    {
+        return false;
     }
 }
